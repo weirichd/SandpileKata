@@ -38,7 +38,7 @@ There is no method to remove sand from a particular location on the pile.
 It is possible to remove sand indirectly via the method described below.
 
 #### If adding sand to a location brings it's value above four causes that location to "topple."
-This causes its value to be reduced by four and then each adjacent neighbor to increse by one. (Note, cells must be touching to be considered adjacent. Two cells which share a corner but not an edge ae not adjacent.)
+This causes its value to be reduced by four and then each adjacent neighbor to increse by one. (Note, cells must be touching to be considered adjacent. Two cells which share a corner but not an edge are not adjacent.)
 
 |  | `0` | `1` | `2` | `3` |
 |:-:|:-:|:-:|:-:|:-:|
