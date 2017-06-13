@@ -17,6 +17,7 @@ You can think of this as being the number of grains of sand in that location on 
 | `1` | 2 | 3 | 0 | 1 |
 | `2` | 1 | 0 | 0 | 2 |
 | `3` | 3 | 1 | 1 | 0 |
+
 *Example: A* `4 x 4` *sandpile.*
 
 #### Sand can be added at any location.
@@ -29,6 +30,7 @@ We can add a grain of sand to any cell in the pile.
 | `1` | 2 | 3 | 1 | 1 |
 | `2` | 1 | 0 | 0 | 2 |
 | `3` | 3 | 1 | 1 | 0 |
+
 *Example: Adding one to the location* `(2, 1)`.
 
 #### Sand cannot be removed directly.
@@ -53,6 +55,7 @@ This causes its value to be reduced by four and then each adjacent neighbor to i
 | `1` | 3 | 0 | 2 | 1 |
 | `2` | 1 | 1 | 0 | 2 |
 | `3` | 3 | 1 | 1 | 0 |
+
 *Example: Adding one to the location* `(1, 1)` *increased it's value to* `4`. *This caused a topple, which resulted in* `(1, 1)` *being set to* `0` *and the four adjacent cells going up by one.*
 
 #### If a cell on the boundary topples, grains fall off the pile and are removed.
@@ -73,6 +76,7 @@ Sand is removed from the table when a cell on the boundary topples. This could e
 | `1` | 0 | 1 | 2 | 1 |
 | `2` | 2 | 1 | 0 | 2 |
 | `3` | 3 | 1 | 1 | 0 |
+
 *Example: Adding a grain to cell* `(0, 1)` *caused it to topple. Because it was on the boundary, its three neighbors each increased by one, and the last grain "fell off the pile"*
 
 #### Toppling could cause other cells to topple.
@@ -103,6 +107,7 @@ This will continue until all cells in the pile have less than four grains.
 | `1` | 1 | 1 | 2 | 1 |
 | `2` | 1 | 2 | 0 | 2 |
 | `3` | 0 | 2 | 1 | 0 |
+
 *Example: Adding two grains to* `(0, 2)` *caused that location to topple. This in turn caused the location* `(0, 3)` *to topple.* After this, each cell has less than four grains, so topplig ceases.
 
 ## Kata Challenges
