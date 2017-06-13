@@ -104,3 +104,23 @@ This will continue until all cells in the pile have less than four grains.
 | `2` | 1 | 2 | 0 | 2 |
 | `3` | 0 | 2 | 1 | 0 |
 *Example: Adding two grains to* `(0, 2)` *caused that location to topple. This in turn caused the location* `(0, 3)` *to topple.* After this, each cell has less than four grains, so topplig ceases.
+
+## Kata Challenges
+
+Try to get through as many levels as you can!
+
+### Level 1
+Create an implementation of the abelian sandpile. The user should be able to create sandpiles of any size, add grains of sand to a location on the pile, and inspect the contents of the pile.
+
+### Level 2
+Give the user the ability to add sandpiles together, provided they are the same size.
+
+### Level 3
+Create a way to visualize a sandpile.
+
+### Level 4
+Use your visualization to create an animation. Starting with a blank sandpile, continue to drop one grain at a time at a target location, and display what patterns emerge from this process.
+
+### BONUS
+
+Attempt challenge levels 1-4 using a grid of hexagons instead of squares (i.e. a "honeycomb"). In this setting the threashold for toppling will be six instead of four.
