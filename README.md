@@ -49,11 +49,8 @@ Sand is removed from the table when a cell on the boundary topples. This could e
 If a cell topples and one of its neighbors grows above four grains, then the toppling rule applies to that neighbor.
 This will continue until all cells in the pile have less than four grains.
 
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand09.png" width=300>
-:arrow_left:
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand11.png" width=200>
-:arrow_left:
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand12.png" width=200>
+| <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand03.png" width=200> | :arrow_right: | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand03.png" width=200> | :arrow_right: | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand04.png" width=200>
+|:-:|:-:|:-:|:-:|:-:|
 
 *Example: Adding a grain to* `(0, 2)` *caused that location to topple. This in turn caused the location* `(0, 3)` *to topple.* After this, each cell has less than four grains, so topplig ceases.
 
