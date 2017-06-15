@@ -11,7 +11,7 @@ A *sandpile* is a 2-dimensional square array with the following properties:
 #### Each cell of the array contains an integer between zero and three.
 You can think of this as being the number of grains of sand in that location on the pile.
 
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand00.png" width="50%">
+<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand00.png" width=300>
 
 *Example: A* `4 x 4` *sandpile.*
 
@@ -19,7 +19,7 @@ You can think of this as being the number of grains of sand in that location on 
 
 We can add a grain of sand to any cell in the pile.
 
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand01.png" width="50%">
+<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand01.png" width=300>
 
 *Example: Adding one to the location* `(2, 1)`.
 
@@ -30,22 +30,22 @@ It is possible to remove sand indirectly via the method described below.
 #### If adding sand to a location brings it's value above four causes that location to "topple."
 This causes its value to be reduced by four and then each adjacent neighbor to increse by one. (Note, cells must be touching to be considered adjacent. Two cells which share a corner but not an edge are not adjacent.)
 
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand03.png" width="50%">
+<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand03.png" width=300>
 
 :arrow_down:
 
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand04.png" width="50%">
+<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand04.png" width=300>
 
 *Example: Adding one to the location* `(1, 1)` *increased it's value to* `4`. *This caused a topple, which resulted in* `(1, 1)` *being set to* `0` *and the four adjacent cells going up by one.*
 
 #### If a cell on the boundary topples, grains fall off the pile and are removed.
 Sand is removed from the table when a cell on the boundary topples. This could either be an edge cell, or a corner cell.
 
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand06.png" width="50%">
+<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand06.png" width=300>
 
 :arrow_down:
 
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand07.png" width="50%">
+<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand07.png" width=300>
 
 *Example: Adding a grain to cell* `(0, 1)` *caused it to topple. Because it was on the boundary, its three neighbors each increased by one, and the last grain "fell off the pile"*
 
@@ -53,16 +53,17 @@ Sand is removed from the table when a cell on the boundary topples. This could e
 If a cell topples and one of its neighbors grows above four grains, then the toppling rule applies to that neighbor.
 This will continue until all cells in the pile have less than four grains.
 
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand09.png" width="50%">
+<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand09.png" width=300>
 
 :arrow_down:
 
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand11.png" width="50%">
+<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand11.png" width=300>
 
 :arrow_down:
-<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand12.png" width="50%">
 
-*Example: Adding two grains to* `(0, 2)` *caused that location to topple. This in turn caused the location* `(0, 3)` *to topple.* After this, each cell has less than four grains, so topplig ceases.
+<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand12.png" width=300>
+
+*Example: Adding a grain to* `(0, 2)` *caused that location to topple. This in turn caused the location* `(0, 3)` *to topple.* After this, each cell has less than four grains, so topplig ceases.
 
 ## Kata Challenges
 
