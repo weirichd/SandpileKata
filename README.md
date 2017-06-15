@@ -13,6 +13,7 @@ You can think of this as being the number of grains of sand in that location on 
 
 |<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand00.png" width=200>|
 |:-:|
+
 *Example: A* `4 x 4` *sandpile.*
 
 #### Sand can be added at any location.
@@ -21,6 +22,7 @@ We can add a grain of sand to any cell in the pile.
 
 |<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand01.png" width=200>|
 |:-:|
+
 *Example: Adding one to the location* `(2, 1)`.
 
 #### Sand cannot be removed directly.
@@ -40,6 +42,7 @@ Sand is removed from the table when a cell on the boundary topples. This could e
 
 | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand06.png" width=200> | :arrow_right: | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand07.png" width=200> |
 |:-:|:-:|:-:|
+
 *Example: Adding a grain to cell* `(0, 1)` *caused it to topple. Because it was on the boundary, its three neighbors each increased by one, and the last grain "fell off the pile"*
 
 #### Toppling could cause other cells to topple.
@@ -48,6 +51,7 @@ This will continue in an acalanche until all cells in the pile have less than fo
 
 | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand09.png" width=200> | :arrow_right: | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand11.png" width=200> | :arrow_right: | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand12.png" width=200>
 |:-:|:-:|:-:|:-:|:-:|
+
 *Example: Adding a grain to* `(0, 2)` *caused that location to topple. This in turn caused the location* `(0, 3)` *to topple.* After this, each cell has less than four grains, so topplig ceases.
 
 ## Kata Challenges
