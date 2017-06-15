@@ -11,12 +11,7 @@ A *sandpile* is a 2-dimensional square array with the following properties:
 #### Each cell of the array contains an integer between zero and three.
 You can think of this as being the number of grains of sand in that location on the pile.
 
-|  | `0` | `1` | `2` | `3` |
-|:-:|:-:|:-:|:-:|:-:|
-| `0` | 2 | 0 | 1 | 1 |
-| `1` | 2 | 3 | 0 | 1 |
-| `2` | 1 | 0 | 0 | 2 |
-| `3` | 3 | 1 | 1 | 0 |
+<img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand00.png" width=50%>
 
 *Example: A* `4 x 4` *sandpile.*
 
