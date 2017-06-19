@@ -1,6 +1,6 @@
 # The Abelian Sandpile Kata
 
-In this kata, you will be challanged to implement the abelian sandpile, a type of celular automata. See [this Wikipedia article](https://en.wikipedia.org/wiki/Abelian_sandpile_model) for a more technical description.
+In this kata, you will be challenged to implement the abelian sandpile, a type of cellular automata. See [this Wikipedia article](https://en.wikipedia.org/wiki/Abelian_sandpile_model) for a more technical description.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Tannin_heap.jpeg" width=300>
 
@@ -29,8 +29,8 @@ We can add a grain of sand to any cell in the pile.
 There is no method to remove sand from a particular location on the pile.
 It is possible to remove sand indirectly via the method described below.
 
-#### If adding sand to a location brings it's value above four causes that location to "topple."
-This causes its value to be reduced by four and then each adjacent neighbor to increse by one. (Note, cells must be touching to be considered adjacent. Two cells which share a corner but not an edge are not adjacent.)
+#### If adding sand to a location brings its value above four causes that location to "topple."
+This causes its value to be reduced by four and then each adjacent neighbor to increase by one. (Note, cells must be touching to be considered adjacent. Two cells which share a corner but not an edge are not adjacent.)
 
 | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand03.png" width=200> | :arrow_right: | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand04.png" width=200> |
 |:-:|:-:|:-:|
@@ -47,7 +47,7 @@ Sand is removed from the table when a cell on the boundary topples. This could e
 
 #### Toppling could cause other cells to topple.
 If a cell topples and one of its neighbors grows above four grains, then the toppling rule applies to that neighbor.
-This will continue in an acalanche until all cells in the pile have less than four grains.
+This will continue in an avalanche until all cells in the pile have less than four grains.
 
 | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand09.png" width=200> | :arrow_right: | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand11.png" width=200> | :arrow_right: | <img src="https://github.com/weirichd/SandpileKata/blob/master/sandpile_images/sand12.png" width=200>
 |:-:|:-:|:-:|:-:|:-:|
@@ -72,4 +72,4 @@ Use your visualization to create an animation. Starting with a blank sandpile, c
 
 ### BONUS
 
-Attempt challenge levels 1-4 using a grid of hexagons instead of squares (i.e. a "honeycomb"). In this setting the threashold for toppling will be six instead of four.
+Attempt challenge levels 1-4 using a grid of hexagons instead of squares (i.e. a "honeycomb"). In this setting the threshold for toppling will be six instead of four.
